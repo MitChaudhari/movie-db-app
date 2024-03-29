@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container.mt-5
+    .jumbotron
+      h1.display-4 Hello, welcome to MovieDB!
+      p.lead This is a simple MongoDB Atlas application developed as a part of a class assignment for ITMD 442 at Illinois Institute of Technology.
+      hr.my-4
+      p It allows you to create, read, update, and delete movie records in a database.
+      p Contact Info:
+      ul.list-unstyled
+        li Mitansh Chaudhari
+        li Email: 
+          a(href="mailto:mchaudhari1@hawk.iit.edu") mchaudhari1@hawk.iit.edu
+      a.btn.btn-primary.btn-lg(href='/movies', role='button') View Movies Database
