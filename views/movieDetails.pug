@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .container.mt-5
+    .row
+      .col-md-12
+        h1= movie.title
+        p
+          strong Director:
+          | #{movie.director}
+        p
+          strong Year:
+          | #{movie.year}
+        if movie.notes
+          p
+            strong Notes:
+            | #{movie.notes}
+        .btn-group.mt-3
+          a.btn.btn-primary(href=`/movies/${movie._id}/edit`) Edit
+          // The Delete button form (using POST request for deletion)
+          form(action=`/movies/${movie._id}?_method=DELETE`, method="POST", style="display:inline;")
+            button.btn.btn-danger(type="submit") Delete
+        a.btn.btn-secondary.ml-2(href='/movies') Back to List
