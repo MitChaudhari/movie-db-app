@@ -90,7 +90,7 @@ router.post('/:id/edit',
 // Handle the POST request for deleting a movie
 router.post('/:id/delete', async (req, res, next) => {
     try {
-      await Movie.findByIdAndDelete(req.params.id); // Use findByIdAndDelete
+      await Movie.findByIdAndDelete(req.params.id);
       res.redirect('/movies');
     } catch (error) {
       next(error);

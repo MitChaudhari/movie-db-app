@@ -19,7 +19,7 @@ The development environment for this project includes:
 - **Node.js Version**: v20.11.0
 - **NPM Version**: 10.5.0
 - **Editor**: Visual Studio Code
-- Additional tools and technologies include MongoDB Atlas for the database, Express.js for the server-side logic, and Bootstrap for front-end styling.
+- Additional tools and technologies include MongoDB Atlas for the database, Express.js for the server-side logic, Bootstrap for front-end styling, and Google Docs for tasks breakdown.
 
 ## Installation/Running Instructions
 
