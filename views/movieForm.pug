@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .container.mt-5
+    h1= title
+    if errors && errors.length
+      .alert.alert-danger
+        each error in errors
+          div= error.msg
+    form(method='POST', action=(movie && movie._id) ? `/movies/${movie._id}/edit` : '/movies')
+      .form-group
+        label(for='title') Title
+        input#title.form-control(type='text', name='title', value=(movie ? movie.title : ''))
+      .form-group
+        label(for='director') Director
+        input#director.form-control(type='text', name='director', value=(movie ? movie.director : ''))
+      .form-group
+        label(for='year') Year
+        input#year.form-control(type='text', name='year', value=(movie ? movie.year : ''))
+      .form-group
+        label(for='notes') Notes
+        textarea#notes.form-control(name='notes')= movie ? movie.notes : ''
+      button.btn.btn-primary.mr-4(type='submit') Submit
+      a.btn.btn-secondary(href='/movies') Cancel

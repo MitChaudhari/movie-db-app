@@ -2,7 +2,9 @@ extends layout
 
 block content
   .container.mt-5
-    a.btn.btn-secondary.mb-3(href='/') Back to Home
+    .d-flex.justify-content-between.mb-3
+      a.btn.btn-secondary(href='/') Back to Home
+      a.btn.btn-primary(href='/movies/new') Create New Movie
     h1= title
     table.table.table-hover
       thead
