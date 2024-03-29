@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .container.mt-5
+    a.btn.btn-secondary.mb-3(href='/') Back to Home
+    h1= title
+    table.table.table-hover
+      thead
+        tr
+          th Title
+          th Director
+          th Year
+          th Actions
+      tbody
+        each movie in movies
+          tr
+            td= movie.title
+            td= movie.director
+            td= movie.year
+            td
+              a.btn.btn-sm.btn-info(href=`/movies/${movie._id}`) View Details
