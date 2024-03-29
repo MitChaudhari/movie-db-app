@@ -1,14 +1,52 @@
-# Movie Database Application - Lab 4
 
-## Overview
+# Movie Database Lab 4 - ITMD 442
 
-This project is a simple movie database web application developed for Lab 4 of the ITMD 442 course. It utilizes Node.js, Express, and MongoDB Atlas to allow users to perform CRUD (Create, Read, Update, Delete) operations on movie records. The front end employs Pug as the template engine and Bootstrap for styling.
+## Mitansh Chaudhari
 
-## Features
+- **Email**: mchaudhari1@hawk.iit.edu
+- **Course**: ITMD 442, Lab 4
+- **Git repository URL**: [https://github.com/ITMD442-MitC/movie-db-lab4](https://github.com/ITMD442-MitC/movie-db-lab4)
 
-- **Create Movie Records**: Users can add new movie details to the database.
-- **Read Movie Records**: Users can view the list of all movies stored in the database.
-- **Update Movie Records**: Users can modify the details of existing movie records.
-- **Delete Movie Records**: Users can remove movie records from the database.
+## Project Description
 
-## Installation
+This project is a simple movie database application developed as part of ITMD 442's Lab 4 assignment. It utilizes MongoDB Atlas for data storage, ensuring a cloud-based, scalable solution for managing movie records. The application allows users to perform CRUD operations (Create, Read, Update, Delete) on movie records. It's built with Node.js and Express, leveraging Pug templates for the front end, along with Bootstrap for styling, to ensure a clean and responsive user interface. Special attention was paid to sanitizing user input to enhance security and prevent injection attacks.
+
+## Development Environment
+
+The development environment for this project includes:
+
+- **Computer OS**: MacBook Air M1
+- **Node.js Version**: v20.11.0
+- **NPM Version**: 10.5.0
+- **Editor**: Visual Studio Code
+- Additional tools and technologies include MongoDB Atlas for the database, Express.js for the server-side logic, and Bootstrap for front-end styling.
+
+## Installation/Running Instructions
+
+To get the project up and running, follow these steps:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/ITMD442-MitC/movie-db-lab4.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd movie-db-lab4
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the application in development mode:
+   ```
+   npm run dev
+   ```
+5. Access the application by navigating to [http://localhost:3000/](http://localhost:3000/) in your web browser.
+
+## Insights and Results
+
+Throughout the development of this lab assignment, I gained valuable experience in working with MongoDB Atlas, managing cloud-based databases, and implementing CRUD operations in a Node.js application. Challenges included ensuring data security through proper sanitization of user input and overcoming initial hurdles with setting up MongoDB Atlas. The integration of Bootstrap significantly streamlined the styling process, enhancing the application's overall look and feel.
+
+## References
+
+- Professor Bailey's lecture demos and Lab 2 materials provided foundational knowledge and guidance.
